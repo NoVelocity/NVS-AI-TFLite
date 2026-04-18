@@ -20,7 +20,7 @@ class TFLite(ASMAI):
     def expansions(self) -> AIExpansion:
         return AIExpansion(["tflite"], ["txt"])
 
-    def available_labels(self, labels: Path) -> list[str]:
+    def available_labels(self) -> list[str]:
         return self.current_labels
 
     def process(self, frame: numpy.ndarray) -> tuple[Union[AIResult, None], Union[list[ContainerParameterResults], None]]:
