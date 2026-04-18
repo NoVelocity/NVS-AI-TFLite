@@ -18,7 +18,7 @@ class TFLite(ASMAI):
     model_name: str = ""
 
     def expansions(self) -> AIExpansion:
-        return AIExpansion(["txt"], ["tflite"])
+        return AIExpansion(["tflite"], ["txt"])
 
     def available_labels(self, labels: Path) -> list[str]:
         return self.current_labels
