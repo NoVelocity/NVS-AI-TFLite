@@ -70,7 +70,7 @@ class TFLite(ASMAI):
 
     def module_info(self) -> ModuleInformation:
         return ModuleInformation(
-            name="AI-TFLite",
+            name="TFLite",
             version="1.0.0",
             requirements=[ModuleRequirement("tensorflow")]
         )
